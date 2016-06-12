@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+BPlusTree-SQL/.idea/copyright/profiles_settings.xml
+
+*.xml
+
+*.class
+
+*.iml
