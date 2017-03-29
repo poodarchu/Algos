@@ -35,3 +35,6 @@ BPlusTree-SQL/.idea/copyright/profiles_settings.xml
 *.class
 
 *.iml
+
+Sorting/cmake-build-debug/*
+Sorting/.idea/*
