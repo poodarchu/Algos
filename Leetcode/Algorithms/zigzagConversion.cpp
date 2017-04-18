@@ -34,6 +34,8 @@ public:
         for (int i = 0; i < numRows; ++i)
             ret += output[i];
 
+        delete[] output;
+
         return ret;
     }
 };
