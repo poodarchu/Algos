@@ -1,6 +1,6 @@
 class Solution {
-//TODO: fix value overflow    
-  string strip(string s) {
+
+	string strip(string s) {
 		int i = 0;
 		for (; i < s.length(); ++i)
 			if (s[i] != ' ')
@@ -17,7 +17,7 @@ class Solution {
 					return s.substr(0, i);
 		} else
 			for (int i = 0; i < s.length(); ++i)
-				if ((int)s[i] >= int('0') || (int)s[i] <= int('9'))
+				if ((int)s[i] >= int('0') && (int)s[i] <= int('9'))
 					continue;
 				else
 					return s.substr(0, i);
@@ -35,8 +35,8 @@ public:
 
 		if (s.empty())
 			return 0;
-	//    if (s = containNonIntegerSymbol(s))
-	//        return 0;
+		//    if (s = containNonIntegerSymbol(s))
+		//        return 0;
 		if (s == "+" || s == "-")
 			return 0;
 		else if (*s.begin() == '+') {
@@ -45,6 +45,9 @@ public:
 			int i = 0;
 			while(ret.size() > 0) {
 				retV += ret.top() * (int) pow(10, i++);
+				if (retV < 0) {
+					return INT_MAX;
+				}
 				ret.pop();
 			}
 		} else if (*s.begin() == '-') {
@@ -53,6 +56,9 @@ public:
 			int i = 0;
 			while(ret.size() > 0) {
 				retV += ret.top() * (int) pow(10, i++);
+				if (-retV > 0) {
+					return INT_MIN;
+				}
 				ret.pop();
 			}
 			retV *= -1;
@@ -62,10 +68,14 @@ public:
 			int i = 0;
 			while(ret.size() > 0) {
 				retV += ret.top() * pow(10, i++);
+				if (retV < 0) {
+					return INT_MAX;
+				}
 				ret.pop();
 			}
 		}
 
 		return retV;
 	}
+
 };
