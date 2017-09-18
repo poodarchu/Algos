@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/poodar/Developments/CLionProjects/netease_game/lazhu.cpp
+iostream
+-
+cstdlib
+-
+vector
+-
+
+/Users/poodar/Developments/CLionProjects/netease_game/main.cpp
+iostream
+-
+string
+-
+cstdlib
+-
+vector
+-
+

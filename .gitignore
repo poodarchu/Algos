@@ -38,3 +38,5 @@ BPlusTree-SQL/.idea/copyright/profiles_settings.xml
 
 Sorting/cmake-build-debug/*
 Sorting/.idea/*
+*.bin
+Interviews/.DS_Store

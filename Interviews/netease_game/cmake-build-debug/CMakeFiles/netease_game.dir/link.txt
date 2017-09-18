@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/netease_game.dir/main.cpp.o CMakeFiles/netease_game.dir/lazhu.cpp.o  -o netease_game 
